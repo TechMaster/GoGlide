@@ -2,5 +2,5 @@ FROM golang:alpine
 
 RUN apk update \
 && apk upgrade \
-&& apk add docker glide \
+&& apk add git docker glide \
 && rm -rf /var/cache/apk/*
