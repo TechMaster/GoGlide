@@ -1,6 +1,7 @@
 FROM golang:alpine
 
 RUN apk update \
-&& apk add glide \
-&& git \
+&& apk upgrade \
+&& apk add git \
+&& glide \
 && rm -rf /var/cache/apk/*
